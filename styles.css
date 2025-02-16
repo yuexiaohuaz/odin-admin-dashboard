@@ -22,7 +22,7 @@
     /* width: 25px;
     height: 25px; */
 }
-.header, .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header, .header-options, .header-profile {
+.header, .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header, .header-options, .header-profile, .trending img {
     display: grid;
     grid-auto-flow: column;
 }
@@ -75,7 +75,7 @@
 .search {
     column-gap: 10px;
 }
-.profile img{
+.profile img, .trending img{
     width: clamp(15px, 6vh, 50px);
     height: clamp(15px, 6vh, 50px);
     border-radius: 50%;
@@ -125,4 +125,7 @@
 }
 .projects {
     grid-row: 1 / 3;
+}
+.trending div {
+    display: flex;
 }
