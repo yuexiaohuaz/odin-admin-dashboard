@@ -9,6 +9,7 @@
     display: grid;
     grid: 0.7fr 4fr / 1fr 4fr;
     height: 110vh;
+    background-color: gainsboro;
 }
 .logo {
     width: 6.5vh;
@@ -26,19 +27,26 @@
     display: grid;
     grid-auto-flow: column;
 }
+.header, .projects div, .announcements, .trending {
+    box-shadow: lightgray 1px 3px 5px;
+}
 /*Sidebar*/
 .sidebar {
     /* display: flex;
     flex-direction: column; */
     gap: 5vh;
     display: grid;
-    margin: 0 10px 10px 10px;
     grid-row: 1 / 5;
     grid-template-rows: 10vh 30vh 30vh;
+    background-color:#1e90ff;
+    color: white;
 }
 .sidebar-content ul, .sidebar-settings ul {
     display: grid;
     gap: 10px;
+}
+.sidebar .icon, .sidebar .logo {
+    fill: white;
 }
 .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header{
     justify-content: flex-start;
@@ -47,9 +55,12 @@
 }
 
 /*Header*/
+
 .header {
     grid-column: 2 / 3;
     grid-template-rows: repeat(2, 8vh);
+    box-shadow: lightgray 5px 3px 5px;
+    background-color: white;
 }
 .top-header {
     display: grid;
@@ -62,6 +73,7 @@
     border-radius: 8px;
     height: 1.5rem;
     width: 40vw;
+    background-color: gainsboro;
 }
 
 .search {
