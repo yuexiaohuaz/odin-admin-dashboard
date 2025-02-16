@@ -17,6 +17,7 @@
     grid: 0.7fr 4fr / 1fr 4fr;
     height: 110vh;
     background-color: gainsboro;
+    overflow: scroll;
 }
 .logo {
     width: 6.5vh;
@@ -165,12 +166,16 @@
     gap: 3vh;
 }
 .projects div {
-    padding: 0 1vw 3vh;
+    padding: 3vh 1vw 3vh;
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 0.4fr 2fr 1fr;
     border-radius: 8px;
     background-color:white;
+    /* height: 30vh; */
+}
+.p-project {
+    border-left: 4px solid yellow;
 }
 .p-body, .a-body, .t-body {
     color: gray;
