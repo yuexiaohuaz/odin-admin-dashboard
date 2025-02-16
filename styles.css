@@ -8,7 +8,7 @@
 .container {
     display: grid;
     grid: 0.7fr 4fr / 1fr 4fr;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .logo {
     width: 6.5vh;
@@ -22,7 +22,7 @@
     /* width: 25px;
     height: 25px; */
 }
-.header, .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header, .header-options, .header-profile, .trending img {
+.header, .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header, .header-options, .header-profile, .trending img, .trending div {
     display: grid;
     grid-auto-flow: column;
 }
@@ -30,7 +30,7 @@
 .sidebar {
     /* display: flex;
     flex-direction: column; */
-    gap: 40px;
+    gap: 5vh;
     display: grid;
     margin: 0 10px 10px 10px;
     grid-row: 1 / 5;
@@ -121,11 +121,47 @@
 .main-content {
     grid-area: 2 / 2;
     display: grid;
-    grid: 1fr 1fr / 3fr 1fr;
+    grid: 1fr 1fr / 5fr 2fr;
+    margin-top: 3vh;
+}
+
+.project {
+    grid-row: 1 / 5;
+    margin: 0 1vw;
 }
 .projects {
-    grid-row: 1 / 3;
+    margin-top: 10px;
+    display: grid;
+    grid: repeat(4, 1fr) / repeat(2, 1fr);
+    height: 100%;
+    gap: 3vh;
+}
+.projects div {
+    padding: 0 1vw;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 5fr;
+}
+.p-body, .a-body, .t-body {
+    color: gray;
+}
+.p-body {
+    font-size: 0.9rem;
+}
+.a-body {
+    font-size: 0.7rem;
+}
+.t-body {
+    font-size: 1rem;
 }
 .trending div {
-    display: flex;
+    grid-template-columns: 1fr 5fr;
+}
+.trending > div > div {
+    display: grid;
+    grid-template-rows: 3vh 4vh;
+    grid-template-columns: 1fr;
+}
+.accountment, .trends {
+    margin-right: 1vw;
 }
