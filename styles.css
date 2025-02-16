@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dotted black;
+    list-style: none;
+}
+.container {
+    display: grid;
+    grid: 0.7fr 4fr / 1fr 4fr;
+    height: 100vh;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.icon, .search-button, .bell  {
+    width: 25px;
+    height: 25px;
+}
+.header, .sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header, .header-options, .header-profile {
+    display: grid;
+    grid-auto-flow: column;
+}
+/*Sidebar*/
+.sidebar {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 40px;
+    display: grid;
+    margin: 0 10px 10px 10px;
+    grid-row: 1 / 5;
+    grid-template-rows: 10vh 30vh 30vh;
+}
+.sidebar-content ul, .sidebar-settings ul {
+    display: grid;
+    gap: 10px;
+}
+.sidebar-content li, .sidebar-settings li, .main-logo, .search, .profile, .bottom-header{
+    justify-content: flex-start;
+    column-gap: 5px;
+    align-items: center;
+}
+
+/*Header*/
+.header {
+    grid-column: 2 / 3;
+    grid-template-rows: repeat(2, 8vh);
+}
+.top-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 6vh;
+    height: 8vh;
+}
+.searchbar input{
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 1.5rem;
+    width: 40vw;
+}
+
+.search {
+    margin-left: 3vw;
+    /* display: flex; */
+}
+
+.bell {
+    margin-left: 8vw;
+}
+.search {
+    column-gap: 10px;
+}
+.profile img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.bottom-header {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 0 3vw;
+}
+.header-profile {
+    display: grid;
+    grid-template-columns: 80px;
+}
+p:nth-child(2) {
+    font-size: 1.7rem;
+    font-weight: 550;
+}
+.bottom-header img {
+    width: 3.8em;
+    height: 3.8em;
+    border-radius: 50%;
+}
+.header-options {
+    gap: 2vw;
+    justify-content: flex-end;
+    /* margin-left: 500px; */
+}
+.header-options button {
+    border-radius: 16px;
+    padding: 8px 24px;
+}
+
+
+/*Main*/
+.main-content {
+    grid-area: 2 / 2;
+}
