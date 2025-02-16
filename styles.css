@@ -49,7 +49,7 @@
 }
 .sidebar-content ul, .sidebar-settings ul {
     display: grid;
-    gap: 10px;
+    gap: 15px;
 }
 .sidebar .icon, .sidebar .logo {
     fill: white;
@@ -175,7 +175,7 @@
     /* height: 30vh; */
 }
 .p-project {
-    border-left: 4px solid yellow;
+    border-left: 4px solid gold;
 }
 .p-body, .a-body, .t-body {
     color: gray;
@@ -206,22 +206,26 @@
     font-size: 0.7rem;
 }
 .announcements {
-    padding: 0.3rem;
+    padding: 0.9rem 0.5rem;
     margin-top: 0.8vh;
     border-radius: 8px;
     background-color:white;
 }
 .announcements div {
     padding: 1rem;
-    
+    border-bottom: 1px dotted gray;
 }
-
+div .announcement3 {
+    border: none;
+}
 .t-body {
     font-size: 1rem;
 }
 .trending {
     border-radius: 8px;
     background-color:white;
+    padding: 2vh 2vh;
+    margin-top: 1vh;
 }
 .trending div {
     grid-template-columns: 1fr 5fr;
