@@ -8,7 +8,7 @@
 .container {
     display: grid;
     grid: 0.7fr 4fr / 1fr 4fr;
-    /* height: 100vh; */
+    height: 110vh;
 }
 .logo {
     width: 6.5vh;
@@ -16,7 +16,7 @@
     /* width: 50px;
     height: 50px; */
 }
-.icon, .search-button, .bell, .icons svg  {
+.icon, .search-button, .bell {
     width: clamp(15px, 3.3vh, 25px);
     height: clamp(15px, 3.3vh, 25px);
     /* width: 25px;
@@ -121,14 +121,16 @@
 .main-content {
     grid-area: 2 / 2;
     display: grid;
-    grid: 1fr 1fr / 5fr 2fr;
+    grid: 1fr 1fr 1fr / 5fr 2fr;
     margin-top: 3vh;
-
+    height: 80vh;
+    row-gap: 30px;
 }
 
 .project {
     grid-row: 1 / 5;
     margin: 0 1vw;
+    height: 80vh;
 }
 .projects {
     margin-top: 10px;
@@ -138,10 +140,11 @@
     gap: 3vh;
 }
 .projects div {
-    padding: 0 1vw;
+    padding: 0 1vw 3vh;
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: 1fr 5fr 1fr;
+    border-radius: 8px;
 }
 .p-body, .a-body, .t-body {
     color: gray;
@@ -152,8 +155,10 @@
 }
 .icons {
     display: grid;
-    height: 10px;
+    height: 2.5vh;
+    width: 7.5vw;
     grid-template-columns: repeat(3, calc(100% / 3));
+    margin-left: auto;
 }
 .icons svg:nth-child(2) {
     grid-column: 2 / 3;
@@ -161,14 +166,32 @@
 .icons svg:nth-child(3) {
     grid-column: 3 / 4;
 }
+.icons svg  {
+    width: clamp(20px, 3.3vh, 25px);
+    height: clamp(20px, 3.3vh, 25px);
+}
+
 .a-body {
     font-size: 0.7rem;
 }
+.announcements {
+    padding: 0.3rem;
+    margin-top: 0.8vh;
+    border-radius: 8px;
+}
+.announcements div {
+    padding: 1rem;
+}
+
 .t-body {
     font-size: 1rem;
 }
+.trending {
+    border-radius: 8px;
+}
 .trending div {
     grid-template-columns: 1fr 5fr;
+    padding: 0.13rem 0.5rem;
 }
 .trending > div > div {
     display: grid;
