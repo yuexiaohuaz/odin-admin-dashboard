@@ -16,7 +16,7 @@
     /* width: 50px;
     height: 50px; */
 }
-.icon, .search-button, .bell  {
+.icon, .search-button, .bell, .icons svg  {
     width: clamp(15px, 3.3vh, 25px);
     height: clamp(15px, 3.3vh, 25px);
     /* width: 25px;
@@ -123,6 +123,7 @@
     display: grid;
     grid: 1fr 1fr / 5fr 2fr;
     margin-top: 3vh;
+
 }
 
 .project {
@@ -140,13 +141,25 @@
     padding: 0 1vw;
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 .p-body, .a-body, .t-body {
     color: gray;
 }
 .p-body {
     font-size: 0.9rem;
+    display: grid;
+}
+.icons {
+    display: grid;
+    height: 10px;
+    grid-template-columns: repeat(3, calc(100% / 3));
+}
+.icons svg:nth-child(2) {
+    grid-column: 2 / 3;
+}
+.icons svg:nth-child(3) {
+    grid-column: 3 / 4;
 }
 .a-body {
     font-size: 0.7rem;
@@ -162,6 +175,6 @@
     grid-template-rows: 3vh 4vh;
     grid-template-columns: 1fr;
 }
-.accountment, .trends {
-    margin-right: 1vw;
+.announcement, .trends {
+    margin-right: 2vw;
 }
