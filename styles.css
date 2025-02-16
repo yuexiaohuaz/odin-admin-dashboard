@@ -97,7 +97,7 @@
     display: grid;
     grid-template-columns: 80px;
 }
-p:nth-child(2) {
+.header-message p:nth-child(2) {
     font-size: 1.7rem;
     font-weight: 550;
 }
